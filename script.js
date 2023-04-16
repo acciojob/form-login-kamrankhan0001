@@ -4,14 +4,17 @@
 // }
 // script.js
 
+// script.js
+
 function getFormvalue() {
-  // Get the input values from the form
-  var firstName = document.getElementById("first-name").value;
-  var lastName = document.getElementById("last-name").value;
-
-  // Concatenate the first and last name
-  var fullName = firstName + " " + lastName;
-
-  // Show an alert with the first and last name
+  // Get the form element
+  var form = document.getElementById("myForm");
+  
+  // Get the values of the first name and last name fields
+  var firstName = form.elements["firstName"].value;
+  var lastName = form.elements["lastName"].value;
+  
+  // Display the first name and last name using alert
   alert("First Name: " + firstName + "\nLast Name: " + lastName);
 }
+
